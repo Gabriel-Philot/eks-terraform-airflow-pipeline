@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "lading" {
   # Parâmetros de configuração do recurso escolhido
-  bucket = "dl-challenge-mod3-landing-zone-gp"
+  bucket = "dl-fuel-landing-zone-gp"
   tags = {
     IES   = "IGTI"
     CURSO = "EDC"
@@ -34,7 +34,7 @@ resource "aws_s3_bucket_public_access_block" "datalake_public_access_block" {
 
 resource "aws_s3_bucket" "processing" {
   # Parâmetros de configuração do recurso escolhido
-  bucket = "dl-challenge-mod3-processing-zone-gp"
+  bucket = "dl-fuel-processing-zone-gp"
   tags = {
     IES   = "IGTI"
     CURSO = "EDC"
@@ -67,7 +67,7 @@ resource "aws_s3_bucket_public_access_block" "datalake_public_access_block_proce
 }
 
 resource "aws_s3_bucket" "airflow_logs" {
-  bucket = "dl-challenge-mod3-airflow-logs-gp"
+  bucket = "dl-fuel-airflow-logs-gp"
   tags = {
     IES   = "IGTI"
     CURSO = "EDC"
