@@ -7,7 +7,7 @@ variable "region" {
 variable "project_name" {
     description = "project name"
     type = string
-    default = "edc-m3-challenge"
+    default = "edc-m3-fuel"
 }
 
 locals {
